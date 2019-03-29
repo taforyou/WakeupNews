@@ -1,0 +1,33 @@
+{
+"status": "ok",
+"totalResults": 35,
+"articles": [
+    {
+"source": {
+"id": null,
+"name": "Ryt9.com"
+},
+"author": null,
+"title": "ECOBIOLOGY กุญแจสำคัญในการรักษาสมดุลแห่งผิว โดย NAOS (นาโอส)... - อาร์วายที9",
+"description": null,
+"url": "https://www.ryt9.com/s/prg/2972491",
+"urlToImage": null,
+"publishedAt": "2019-03-27T08:06:05Z",
+"content": "40 NAOS () Jean-Noël Thorel NAOS Mission Care First NAOS BIODERMA, Institut Esthederm Etat Pur (Ecobiology) NAOS NAOS 100 \"\" \"\" Skincare Human Care NAOS Thailand Institut Esthederm Etat Pur NAOS Thailand ( ) BIODERMA \" 3 NAOS Thailand\" 2 2022 BIODERMA NAOS Th… [+782 chars]"
+},
+{
+"source": {
+"id": null,
+"name": "Sanook.com"
+},
+"author": "Thai Post",
+"title": "เลือกตั้ง 2562: เศรษฐกิจใหม่โผล่พบ กกต. จี้เผยคะแนนเลือกตั้ง ลั่นจุดยืนยังเหมือนเดิม - Sanook",
+"description": "เศรษฐกิจใหม่เดินทางไปพบคณะกรรมการการเลือกตั้ง (กกต.) เรียกร้องให้เปิดเผยคะแนนเลือกตั้ง เนื่องจากสับสนว่าพรรคจะได้จำนวน ส.ส. บัญชีรายชื่อเท่าใด ขณะที่จุดยืนพรรคยังเหมือนเดิม คืออยู่ฝั่งประชาธิปไตย",
+"url": "https://www.sanook.com/news/7726170/",
+"urlToImage": "https://s.isanook.com/ns/0/rp/rc/w700h366/yacxacm1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL25zLzAvdWQvMTU0NS83NzI2MTcwL21pbmdraHdhbi5qcGc=.jpg",
+"publishedAt": "2019-03-27T07:46:25Z",
+"content": null
+}
+]
+
+}
