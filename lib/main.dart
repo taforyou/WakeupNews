@@ -131,7 +131,9 @@ class NewsWidget extends StatelessWidget {
                                                 right: 4.0,
                                                 bottom: 4.0),
                                             child:  Text(
-                                              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu facilisis sed odio morbi quis commodo odio aenean sed.',
+                                              // เผื่อมันว่างจะพังเด้อ
+                                              _news.description ?? ' ',
+                                              maxLines: 3,
                                               style:  TextStyle(
                                                 color: Colors.grey[500],
                                               ),
@@ -148,8 +150,9 @@ class NewsWidget extends StatelessWidget {
                                         child:  SizedBox(
                                           height: 100.0,
                                           width: 100.0,
+                                          // เหมือนกันแยก Data พังหน่อย
                                           child:  Image.network(
-                                            'https://via.placeholder.com/150',
+                                            _news.urlToImage ?? 'https://via.placeholder.com/150',
                                             fit: BoxFit.cover,
                                           ),
                                         ),
