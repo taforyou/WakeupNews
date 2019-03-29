@@ -49,18 +49,13 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
+      body: 
           // คือถ้าไม่ได้กำหนด List View ให้ดี เหมือนต้องใส่ Expanded ไว้ก่อนเพื่อป้องกันมัน Scale แปลกๆ
-          Expanded(
-              child: ListView(
-                //children: _newsTemp.map((news) => Text(news)).toList(),
-                children: _news.map((news) => NewsWidget(news)).toList(),
+          ListView(
+            //children: _newsTemp.map((news) => Text(news)).toList(),
+            children: _news.map((news) => NewsWidget(news)).toList(),
             ),
-          ),
-        ],
-      ),
+        
     );
   }
 }
@@ -71,8 +66,15 @@ class NewsWidget extends StatelessWidget {
 
   NewsWidget(this._news);
 
+  
   @override
   Widget build(BuildContext context) {
+    
+    //DateTime now = DateTime.now();
+    //String formattedDate = DateFormat('yyyy-MM-dd – kk:mm').format(now);
+  
+    //DateTime temp = DateTime.parse(_news.publishedAt);
+    //String formattedDate = DateFor
     // TODO: implement build
     return Card(
                   elevation: 1.7,
@@ -85,7 +87,7 @@ class NewsWidget extends StatelessWidget {
                                    Padding(
                                     padding:  EdgeInsets.only(left: 4.0),
                                     child:  Text(
-                                      '5 Days ago',
+                                      DateTime.parse(_news.publishedAt).toLocal().toString(),
                                       style:  TextStyle(
                                         fontWeight: FontWeight.w400,
                                         color: Colors.grey[600],
@@ -95,7 +97,7 @@ class NewsWidget extends StatelessWidget {
                                    Padding(
                                     padding:  EdgeInsets.all(5.0),
                                     child:  Text(
-                                      'BBC News',
+                                      _news.source.name,
                                       style:  TextStyle(
                                         fontWeight: FontWeight.w500,
                                         color: Colors.grey[700],
