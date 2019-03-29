@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   listenForNews() async {
-    //_news = new List<Article>();
+    //_news =  new List<Article>();
     var stream = await getPlaces();
     stream.listen((news) => setState(() => _news.add(news)));
     
@@ -59,30 +59,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: _news.map((news) => NewsWidget(news)).toList(),
             ),
           ),
-          Text('Hey'),
-          Text('Hey'),
-          Text('Hey'),
         ],
       ),
     );
   }
 }
-
-// class NewsWidget extends StatelessWidget {
-
-//   final Article _news;
-
-//   NewsWidget(this._news);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     // TODO: implement build
-//     return ListTile(
-//       title: Text(_news.title),
-//     );
-//   }
-
-// }
 
 class NewsWidget extends StatelessWidget {
 
@@ -95,27 +76,27 @@ class NewsWidget extends StatelessWidget {
     // TODO: implement build
     return Card(
                   elevation: 1.7,
-                      child: new Padding(
-                          padding: new EdgeInsets.all(10.0),
-                          child: new Column(
+                      child:  Padding(
+                          padding:  EdgeInsets.all(10.0),
+                          child:  Column(
                             children: [
-                              new Row(
+                               Row(
                                 children: <Widget>[
-                                  new Padding(
-                                    padding: new EdgeInsets.only(left: 4.0),
-                                    child: new Text(
+                                   Padding(
+                                    padding:  EdgeInsets.only(left: 4.0),
+                                    child:  Text(
                                       '5 Days ago',
-                                      style: new TextStyle(
+                                      style:  TextStyle(
                                         fontWeight: FontWeight.w400,
                                         color: Colors.grey[600],
                                       ),
                                     ),
                                   ),
-                                  new Padding(
-                                    padding: new EdgeInsets.all(5.0),
-                                    child: new Text(
+                                   Padding(
+                                    padding:  EdgeInsets.all(5.0),
+                                    child:  Text(
                                       'BBC News',
-                                      style: new TextStyle(
+                                      style:  TextStyle(
                                         fontWeight: FontWeight.w500,
                                         color: Colors.grey[700],
                                       ),
@@ -123,35 +104,35 @@ class NewsWidget extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              new Row(
+                               Row(
                                 children: [
-                                  new Expanded(
-                                    child: new GestureDetector(
-                                      child: new Column(
+                                   Expanded(
+                                    child:  GestureDetector(
+                                      child:  Column(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          new Padding(
-                                            padding: new EdgeInsets.only(
+                                           Padding(
+                                            padding:  EdgeInsets.only(
                                                 left: 4.0,
                                                 right: 8.0,
                                                 bottom: 8.0,
                                                 top: 8.0),
-                                            child: new Text(
+                                            child:  Text(
                                               _news.title,
-                                              style: new TextStyle(
+                                              style:  TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
                                           ),
-                                          new Padding(
-                                            padding: new EdgeInsets.only(
+                                           Padding(
+                                            padding:  EdgeInsets.only(
                                                 left: 4.0,
                                                 right: 4.0,
                                                 bottom: 4.0),
-                                            child: new Text(
+                                            child:  Text(
                                               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu facilisis sed odio morbi quis commodo odio aenean sed.',
-                                              style: new TextStyle(
+                                              style:  TextStyle(
                                                 color: Colors.grey[500],
                                               ),
                                             ),
@@ -160,14 +141,14 @@ class NewsWidget extends StatelessWidget {
                                       ),                                
                                     ),
                                   ),
-                                  new Column(
+                                   Column(
                                     children: <Widget>[
-                                      new Padding(
-                                        padding: new EdgeInsets.only(top: 8.0),
-                                        child: new SizedBox(
+                                       Padding(
+                                        padding:  EdgeInsets.only(top: 8.0),
+                                        child:  SizedBox(
                                           height: 100.0,
                                           width: 100.0,
-                                          child: new Image.network(
+                                          child:  Image.network(
                                             'https://via.placeholder.com/150',
                                             fit: BoxFit.cover,
                                           ),
